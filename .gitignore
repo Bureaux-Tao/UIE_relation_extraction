@@ -154,6 +154,7 @@ cython_debug/
 convert_weights/*/pytorch_model.bin
 convert_weights/ernie-1.0-base-zh/*
 checkpoints/*.pt
+!checkpoints/placeholder.pt
 
 *DS_Store*
 .DS_Store
