@@ -1,0 +1,74 @@
+/root/miniconda3/envs/myconda/bin/python /mnt/pycharm_project_807/evaluate.py --model_path ./checkpoints/lung_uie_mcc_shots10.pt --test_path ./data/target_data/LungCT/dev.txt --batch_size 128 --max_seq_len 512 --category --no_neg
+Global seed set to 42
+[2022-11-18 10:10:42,789] [    INFO] - Start loading weight from ./checkpoints/lung_uie_mcc_shots10.pt
+[2022-11-18 10:10:49,510] [    INFO] - Loading weight finish.
+[2022-11-18 10:10:58,956] [    INFO] - Entities Categories F1:
+[2022-11-18 10:11:02,341] [    INFO] - -----------------------------
+[2022-11-18 10:11:02,341] [    INFO] - Class Name: 部位与器官
+[2022-11-18 10:11:02,341] [    INFO] - Evaluation Correct: 972 | Infer: 1143 | Label: 1270 | Precision: 0.85039 | Recall: 0.76535 | F1: 0.80564
+[2022-11-18 10:11:05,263] [    INFO] - -----------------------------
+[2022-11-18 10:11:05,264] [    INFO] - Class Name: 疾病与症状
+[2022-11-18 10:11:05,264] [    INFO] - Evaluation Correct: 860 | Infer: 1079 | Label: 1244 | Precision: 0.79703 | Recall: 0.69132 | F1: 0.74042
+[2022-11-18 10:11:06,977] [    INFO] - -----------------------------
+[2022-11-18 10:11:06,978] [    INFO] - Class Name: 数量
+[2022-11-18 10:11:06,978] [    INFO] - Evaluation Correct: 256 | Infer: 269 | Label: 263 | Precision: 0.95167 | Recall: 0.97338 | F1: 0.96241
+[2022-11-18 10:11:07,160] [    INFO] - -----------------------------
+[2022-11-18 10:11:07,160] [    INFO] - Class Name: 边缘
+[2022-11-18 10:11:07,160] [    INFO] - Evaluation Correct: 21 | Infer: 21 | Label: 22 | Precision: 1.00000 | Recall: 0.95455 | F1: 0.97674
+[2022-11-18 10:11:08,156] [    INFO] - -----------------------------
+[2022-11-18 10:11:08,156] [    INFO] - Class Name: 直径
+[2022-11-18 10:11:08,156] [    INFO] - Evaluation Correct: 135 | Infer: 137 | Label: 140 | Precision: 0.98540 | Recall: 0.96429 | F1: 0.97473
+[2022-11-18 10:11:08,428] [    INFO] - -----------------------------
+[2022-11-18 10:11:08,429] [    INFO] - Class Name: 密度
+[2022-11-18 10:11:08,429] [    INFO] - Evaluation Correct: 28 | Infer: 30 | Label: 31 | Precision: 0.93333 | Recall: 0.90323 | F1: 0.91803
+[2022-11-18 10:11:08,783] [    INFO] - -----------------------------
+[2022-11-18 10:11:08,783] [    INFO] - Class Name: 形态
+[2022-11-18 10:11:08,784] [    INFO] - Evaluation Correct: 13 | Infer: 20 | Label: 45 | Precision: 0.65000 | Recall: 0.28889 | F1: 0.40000
+[2022-11-18 10:11:08,982] [    INFO] - -----------------------------
+[2022-11-18 10:11:08,982] [    INFO] - Class Name: 边界
+[2022-11-18 10:11:08,982] [    INFO] - Evaluation Correct: 25 | Infer: 25 | Label: 25 | Precision: 1.00000 | Recall: 1.00000 | F1: 1.00000
+[2022-11-18 10:11:09,418] [    INFO] - -----------------------------
+[2022-11-18 10:11:09,419] [    INFO] - Class Name: 纹理
+[2022-11-18 10:11:09,419] [    INFO] - Evaluation Correct: 43 | Infer: 46 | Label: 46 | Precision: 0.93478 | Recall: 0.93478 | F1: 0.93478
+[2022-11-18 10:11:09,453] [    INFO] - -----------------------------
+[2022-11-18 10:11:09,453] [    INFO] - Class Name: 性质
+[2022-11-18 10:11:09,453] [    INFO] - Evaluation Correct: 2 | Infer: 2 | Label: 8 | Precision: 1.00000 | Recall: 0.25000 | F1: 0.40000
+[2022-11-18 10:11:09,454] [    INFO] - Relations Categories F1:
+[2022-11-18 10:15:26,573] [    INFO] - -----------------------------
+[2022-11-18 10:15:26,574] [    INFO] - Class Name: X的部位与器官
+[2022-11-18 10:15:26,574] [    INFO] - Evaluation Correct: 27114 | Infer: 30865 | Label: 33236 | Precision: 0.87847 | Recall: 0.81580 | F1: 0.84598
+[2022-11-18 10:15:31,106] [    INFO] - -----------------------------
+[2022-11-18 10:15:31,107] [    INFO] - Class Name: X的数量
+[2022-11-18 10:15:31,107] [    INFO] - Evaluation Correct: 451 | Infer: 464 | Label: 465 | Precision: 0.97198 | Recall: 0.96989 | F1: 0.97094
+[2022-11-18 10:15:31,503] [    INFO] - -----------------------------
+[2022-11-18 10:15:31,503] [    INFO] - Class Name: X的边缘
+[2022-11-18 10:15:31,503] [    INFO] - Evaluation Correct: 43 | Infer: 43 | Label: 46 | Precision: 1.00000 | Recall: 0.93478 | F1: 0.96629
+[2022-11-18 10:15:40,219] [    INFO] - -----------------------------
+[2022-11-18 10:15:40,219] [    INFO] - Class Name: X的直径
+[2022-11-18 10:15:40,219] [    INFO] - Evaluation Correct: 893 | Infer: 903 | Label: 964 | Precision: 0.98893 | Recall: 0.92635 | F1: 0.95661
+[2022-11-18 10:15:40,306] [    INFO] - -----------------------------
+[2022-11-18 10:15:40,307] [    INFO] - Class Name: X的部位密度
+[2022-11-18 10:15:40,307] [    INFO] - Evaluation Correct: 8 | Infer: 8 | Label: 9 | Precision: 1.00000 | Recall: 0.88889 | F1: 0.94118
+[2022-11-18 10:15:40,307] [    INFO] - -----------------------------
+[2022-11-18 10:15:40,307] [    INFO] - Class Name: X的密度
+[2022-11-18 10:15:40,307] [    INFO] - Evaluation Correct: 8 | Infer: 8 | Label: 9 | Precision: 1.00000 | Recall: 0.88889 | F1: 0.94118
+[2022-11-18 10:15:40,941] [    INFO] - -----------------------------
+[2022-11-18 10:15:40,941] [    INFO] - Class Name: X的病灶形态
+[2022-11-18 10:15:40,941] [    INFO] - Evaluation Correct: 55 | Infer: 68 | Label: 91 | Precision: 0.80882 | Recall: 0.60440 | F1: 0.69182
+[2022-11-18 10:15:41,397] [    INFO] - -----------------------------
+[2022-11-18 10:15:41,397] [    INFO] - Class Name: X的边界
+[2022-11-18 10:15:41,397] [    INFO] - Evaluation Correct: 56 | Infer: 56 | Label: 56 | Precision: 1.00000 | Recall: 1.00000 | F1: 1.00000
+[2022-11-18 10:15:41,486] [    INFO] - -----------------------------
+[2022-11-18 10:15:41,486] [    INFO] - Class Name: X的异常所见
+[2022-11-18 10:15:41,486] [    INFO] - Evaluation Correct: 0 | Infer: 1 | Label: 9 | Precision: 0.00000 | Recall: 0.00000 | F1: 0.00000
+[2022-11-18 10:15:41,903] [    INFO] - -----------------------------
+[2022-11-18 10:15:41,903] [    INFO] - Class Name: X的纹理
+[2022-11-18 10:15:41,903] [    INFO] - Evaluation Correct: 40 | Infer: 40 | Label: 41 | Precision: 1.00000 | Recall: 0.97561 | F1: 0.98765
+[2022-11-18 10:15:41,917] [    INFO] - -----------------------------
+[2022-11-18 10:15:41,917] [    INFO] - Class Name: X的性质
+[2022-11-18 10:15:41,917] [    INFO] - Evaluation Correct: 1 | Infer: 2 | Label: 2 | Precision: 0.50000 | Recall: 0.50000 | F1: 0.50000
+[2022-11-18 10:15:41,956] [    INFO] - -----------------------------
+[2022-11-18 10:15:41,957] [    INFO] - Class Name: X的部位形态
+[2022-11-18 10:15:41,957] [    INFO] - Evaluation Correct: 2 | Infer: 2 | Label: 3 | Precision: 1.00000 | Recall: 0.66667 | F1: 0.80000
+
+进程已结束,退出代码0
