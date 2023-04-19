@@ -394,7 +394,7 @@ python doccano2prompt.py \
 需要将原paddle权重转换成pytorch权重
 
 ```shell
-python \
+python convert.py\
 --input_model uie-micro \                         # 可以下载paddle的uie模型权重进行转换，此项为paddle的uie模型路径，默认[uie-base/uie-tiny]
 --output_model convert_weights/uie-micro_pytorch  # 输出转换后的权重路径
 ```

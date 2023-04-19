@@ -20,7 +20,7 @@ class UIE(BERT):
         
         self.linear_start = nn.Linear(hidden_size, 1)
         self.linear_end = nn.Linear(hidden_size, 1)
-        self.sigmoid = nn.Sigmoid()
+        # self.sigmoid = nn.Sigmoid()
         
         if kwargs.get('use_task_id') and kwargs.get('use_task_id'):
             # Add task type embedding to BERT
